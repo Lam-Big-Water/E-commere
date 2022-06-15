@@ -102,6 +102,7 @@ th,td{
 
 #head li{
     float: left;
+    position: relative;
 }
 
 #head li a{
@@ -125,15 +126,124 @@ th,td{
 #head .customer{
     padding-right: 10px;
     margin-right: 10px;
-    background: url(../images/arrow-up.svg) 68px center no-repeat;
+    background: url(../images/chevron-up-w.svg) 68px center no-repeat;
 }
 
 #head .customer:hover{
-    background: url(../images/arrow-down.svg) 68px center no-repeat;
+    background: url(../images/chevron-down-w.svg) 68px center no-repeat;
+}
+
+#head .customer ul{
+    position: absolute;
+    border: 1px solid #ddd;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0, .2);
+    display: none;
+}
+#head .customer:hover ul{
+    display: block;
+}
+
+/* #head .customer ul:before{
+    width: 12px;
+    height: 12px;
+    content: '';
+    display: block;
+    background: url(../images/chevron-up.svg);
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: -10px;
+} */
+
+#head .customer ul:before,
+#head .down div:before{
+    width: 0px;
+    height: 0px;
+    content: '';
+    display: block;
+    border: 5px solid transparent;
+    border-bottom-color: #fff;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: -10px;
+}
+
+#head .customer ul li{
+    float: none;
+}
+
+#head .customer ul a{
+    display: block;
+    padding: 0;
+    border-left: none;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    margin: 0 10px;
+    color: #999;
+}
+
+#head .customer ul a:hover{
+    color: #b4a078;
+}
+
+#head .customer ul a.noborder{
+    border-bottom: none;
+}
+
+#head .customer li.phone{
+    background: url(../images/chevron-left.svg) 58px center no-repeat;
+}
+
+#head .customer li.phone:hover{
+    background: url(../images/chevron-right.svg) 58px center no-repeat;
+}
+
+#head .customer li.phone div{
+    position: absolute;
+    width: 110px;
+    height: 57px;
+    right: -110px;
+    top: 0;
+    line-height: 20px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 0 3px rgba(0,0,0, .2);
+    display: none;
+}
+#head .customer li.phone:hover div{
+    display: block;
+}
+
+#head .customer li.phone div p:nth-child(1){
+    font-size: 14px;
+    color: #999;
+    margin-top: 12px;
+}
+
+#head .customer li.phone div p:nth-child(2){
+    color: #ccc;
 }
 
 #head .down a{
     padding-left: 25px;
     background: url(../images/smartphone.svg) 10px center no-repeat;
+}
+
+#head .down div{
+    position: absolute;
+    left: -46px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 3px rgba(0,0,0, .2);
+    padding: 10px;
+    line-height: 20px;
+    color: #b4a078;
+    display: none;
+}
+#head .down:hover div{
+    display: block;
 }
 /* header */
