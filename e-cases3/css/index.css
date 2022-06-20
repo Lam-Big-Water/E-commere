@@ -305,12 +305,16 @@
 #recommend .box:nth-child(1) img{
     width: 390px;
     height: 350px; 
-    padding-bottom: 10px;
 }
 
 #recommend img{
     width: 223px;
     height: 150px;
+}
+
+#recommend .box a{
+    display: block;
+    overflow: hidden;
 }
 
 #recommend .box:nth-child(5),#recommend .box:nth-child(6),#recommend .box:nth-child(7){
@@ -325,8 +329,313 @@
     display: none;
 }
 
-
-
-
-
 /* Popular recommendation */
+
+
+/* Limited time purchase */
+#limit{
+    width: 1090px;
+    margin: 40px auto;
+}
+
+#limit h3{
+    font-size: 28px;
+}
+
+#limit header{
+    margin-bottom: 20px;
+}
+
+#limit header .right{
+    padding-top: 5px;
+}
+
+#limit .time{
+    width: 224px;
+    height: 378px;
+    margin-top: 1px;
+    text-align: center;
+    background: url(../images/6.jpeg);
+}
+
+#limit .time h4{
+    font-size: 28px;
+    font-weight: normal;
+    color: #615548;
+    margin-top: 60px;
+}
+
+#limit .time p{
+    font-size: 18px;
+    color: #615548;
+    margin: 40px 0 20px 0;
+}
+
+#limit .timeBox span{
+    display: inline-block;
+    width: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 18px;
+    background: #615548;
+    border-radius: 5px;
+    margin: 0 2px;
+}
+
+#limit .time a{
+    display: block;
+    width: 110px;
+    line-height: 30px;
+    color: #fff;
+    background: #a7936e;
+    border-radius: 15px;
+    margin: 30px auto 0 auto;
+}
+
+#limit .boxWrap{
+    width: 866px;
+    height: 381px;
+}
+
+#limit .limitBox{
+    width: 432px;
+    height: 189px;
+    border: 1px solid #f0ece4;
+    border-left: none;
+    float: left;
+}
+
+#limit .limitBox:nth-of-type(3),#limit .limitBox:nth-of-type(4){
+    border-top: none;
+}
+
+#limit .limitBox a.left{
+    width: 180px;
+    height: 188px;
+    overflow: hidden;
+}
+
+#limit .limitBox .right{
+    width: 252px;
+}
+
+#limit .limitBox .title{
+    font-size: 16px;
+    line-height: 26px;
+}
+
+#limit .limitBox p{
+    line-height: 24px;
+    color: #999;
+}
+
+#limit .numBar{
+    margin: 10px 0;
+    line-height: 12px;
+    color: #999;
+}
+
+#limit .numCon{
+    float: left;
+    width: 152px;
+    height: 10px;
+    border: 1px solid #f2cecd;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+#limit .numCon span{
+    display: block;
+    width: 80%;
+    height: 100%;
+    background: #ffe5e5;
+}
+
+#limit .limited{
+    color: #be4141;
+}
+
+#limit .money{
+    font-size: 18px;
+    margin-left: 5px;
+    color: #be4141;
+}
+
+#limit .original-price{
+    color: #999;
+    margin-left: 10px;
+}
+
+#limit .current-price{
+    font-size: 24px;
+    font-weight: bold;
+    color: #be4141;
+}
+
+#limit .snap-up{
+    display: block;
+    width: 118px;
+    line-height: 31px;
+    font-size: 16px;
+    color: #fff;
+    background: #da4f4f;
+    text-align: center;
+    margin-top: 10px;
+}
+/* Limited time purchase */
+
+
+/* category */
+.category{
+    width: 1090px;
+    margin: 40px auto;
+}
+
+.category h3{
+    font-size: 28px;
+    margin-right: 10px;
+    display: inline;
+}
+
+.category .left span{
+    border-left: 1px solid #666;
+    padding: 3px 0 0 5px;
+}
+
+.category .right ul{
+    float: right;
+}
+
+.category .right li{
+    display: inline;
+}
+
+.category .right li a{
+    margin: 0 10px;
+}
+
+.category .more{
+    float: right;
+    margin-left: 20px;
+}
+
+.category .categoryBigImg img{
+    width: 1090px;
+    height: 320px;
+    margin: 20px auto;
+}
+
+.category .categoryList{
+    display: flex;
+    justify-content: space-between;
+}
+
+.category .categoryList li{
+    text-align: center;
+}
+
+.category .categoryList li>a{
+    display: block;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.category .categoryList img{
+    width: 250px;
+    height: 250px;
+}
+
+.category .categoryList p a{
+    line-height: 26px;
+}
+
+.category .categoryList span{
+    color: #d4282d;
+}
+/* category */
+
+/* say */
+#say{
+    background: #f4f0ea;
+    padding: 40px 0;
+}
+
+#say header{
+    margin-bottom: 20px;
+}
+
+#say h3{
+    font-size: 28px;
+    margin-right: 10px;
+    display: inline;
+}
+
+#say .content{
+    position: relative;
+}
+
+#say .carouselImgCon{
+    position: relative;
+    height: 535px;
+    overflow: hidden;
+}
+
+#say .content ul{
+    width: 2000px;
+    position: absolute;
+    left: 0;
+}
+
+#say .content li{
+    width: 353px;
+    padding: 1px;
+    background: #fff;
+    float: left;
+    margin-right: 10px;
+}
+
+#say .content li a{
+    display: block;
+    width: 353px;
+    height: 353px;
+    overflow: hidden;
+}
+
+#say .content li div{
+    width: 345px;
+    height: 180px;
+    position: relative;
+    top: -40px;
+    left: 4px;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#say .content li p:nth-child(1){
+    color: #999;
+}
+
+#say .content li p:nth-child(2){
+    margin: 10px 0 15px 0;
+}
+
+#say .content li p .left{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#say .content li p .right{
+    font-size: 12px;
+    color: #B4A078;
+}
+
+#say .prev{
+    left: -60px;
+}
+
+#say .next{
+    right: -60px;
+}
+/* say */
